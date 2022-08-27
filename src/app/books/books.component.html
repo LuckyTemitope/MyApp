@@ -13,7 +13,7 @@
           by <b>{{ book.author }}</b>
           </p>
 
-          <button [disabled]="book.disabled" (click)="onClick()"> Save book </button>
+          <button [disabled]="book.disabled" (click)="onClick($event, book)"> Save book </button>
       </div>
     </div>
   </li>

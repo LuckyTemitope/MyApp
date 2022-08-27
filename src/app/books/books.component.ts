@@ -35,8 +35,8 @@ books : Book[] = [
   ngOnInit(): void {
   }
 
-  onClick() {
-    alert("Book Saved")
+  onClick(event:any, book:Book) {
+    alert("Book Saved: " + book.name)
   }
 
 }
