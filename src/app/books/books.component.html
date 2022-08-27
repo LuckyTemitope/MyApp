@@ -1,0 +1,21 @@
+<h2>Programming Book List</h2>
+
+<ul *ngFor="let book of books">
+
+  <li>
+    <div>
+      <img [src]="book.imgUrl" [alt]="book.name" width="100" />
+
+      <div class="book-details">
+        <p>
+          {{ book.name}}
+          <br>
+          by <b>{{ book.author }}</b>
+          </p>
+
+          <button [disabled]="book.disabled" (click)="onClick()"> Save book </button>
+      </div>
+    </div>
+  </li>
+</ul>
+
